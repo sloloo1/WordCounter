@@ -17,7 +17,6 @@ str = Regex.Unescape(str);
 StringBuilder sb = new StringBuilder();
 List<string> listOfFilteredWords = new List<string>();
 
-//Чистим массив
 for (int i = 0; i < str.Length - 1; i++)
 {
     if (char.IsLetter(str[i]))
@@ -49,7 +48,6 @@ for (int i = 0; i < str.Length - 1; i++)
 
 Dictionary<string, int> wordCounts = new Dictionary<string, int>();
 
-//Считаем слова
 foreach (string word in listOfFilteredWords)
 {
     if (wordCounts.ContainsKey(word))
